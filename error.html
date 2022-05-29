@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>error banner</title>
+    <style>
+        *, ::after, ::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* border: green 2px solid; */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f1f1;
+            
+        }
+
+        main {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        div {
+            background-color: #fff;
+            margin-bottom: 50px;
+            width: 320px; 
+            height: 450px;
+            border-radius: 15px;
+            box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2);
+        }
+
+        #carte1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        #carte1 img {
+            width: 200px;
+            filter: drop-shadow(7px 7px #010101) ;
+        }
+        #carte1 h2 {
+            color: #000;
+            font-size: 30px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        #carte1 h3 {
+            color: #000;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /**/
+
+        #carte2 img {
+            width: 125px;
+            height: 125px;
+            /* margin-left: 2px;
+            margin-top: 50px; */
+        }
+
+        section  {
+            margin: 10% 0 10% 0;
+            height: 80%;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #carte2 section .head {
+            box-shadow: none;
+            height: min-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #carte2 section .head p {
+            color: #000;
+            font-weight: 900;
+            font-size: 40px;
+        }
+
+        #carte2 section h2 {
+            transform: rotateZ(10deg);
+            color: #000;
+            font-size: 33px;
+            font-weight: bold;
+            margin-bottom: 25%;
+        }
+
+        #carte2 section h3 {
+            transform: rotateZ(-5deg);
+            color: #000;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5%;  
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="carte1" title="1">
+            <img src="./resources/cancel.png" alt="Error Image">
+            <h2>Connection Error :/</h2>
+            <h3>Try to reload the webpage</h3>
+        </div>
+        <div id="carte2" title="2">
+            <section>
+                <div class="head">
+                    <img src="./resources/cancel.png" alt="Error Image">
+                    <p>ERROR</p>
+                </div>
+                <h2>Connection Error :/</h2>
+                <h3>Try to reload the webpage</h3>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
